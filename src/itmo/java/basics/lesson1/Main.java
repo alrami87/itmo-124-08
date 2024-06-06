@@ -18,9 +18,9 @@ public class Main {
 
         System.out.println("3.");
         int number = 10500;
-        result1 = (number / 10) / 10;
+        result = (number / 10.0) / 10;
         System.out.println();
-        System.out.println("Результат вычисления: " + result1);
+        System.out.println("Результат вычисления: " + result);
 
         System.out.println("4.");
         double aa = 3.6;
