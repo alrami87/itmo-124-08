@@ -62,5 +62,14 @@ public class Main {
         System.out.println("Разница равна " + intCalculator.getDiff());
         System.out.println("Произведение равно " + intCalculator.getMul());
         System.out.println("Частное равно " + intCalculator.getDiv());
+
+        System.out.println();
+        Conditioner conditioner1 = new Conditioner("ROYAL Clima", "Tessoro RM-TS17CH-E");
+        System.out.println(conditioner1);
+        conditioner1.setModeCount(3);
+        conditioner1.setWeight(12.6);
+        System.out.println(conditioner1);
+        System.out.println("Масса нетто равна: " + conditioner1.getWeight());
+        System.out.println("Масса брутто равна: " + TotalWeight.getTotalWeight(conditioner1,2.5));
     }
 }
