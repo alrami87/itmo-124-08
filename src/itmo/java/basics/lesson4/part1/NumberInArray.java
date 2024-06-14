@@ -1,14 +1,14 @@
 package itmo.java.basics.lesson4.part1;
 
 public class NumberInArray {
-    public static Boolean numberIsHeadOrTailOfArray(int[] array, Integer number) {
-        if (number == array[0] || number == array[array.length - 1])  return Boolean.TRUE;
-        else return Boolean.FALSE;
+    public static boolean numberIsHeadOrTailOfArray(int[] array, Integer number) {
+        if (number == array[0] || number == array[array.length - 1])  return true;
+        else return false;
     }
-    public static Boolean numbersIsInArray(int[] array, Integer firstNumber, Integer secondNumber) {
-        Boolean result = Boolean.FALSE;
+    public static boolean numbersIsInArray(int[] array, Integer firstNumber, Integer secondNumber) {
+        boolean result = false;
         for (int i : array) {
-            if (i == firstNumber || i == secondNumber)  result = Boolean.TRUE;
+            if (i == firstNumber || i == secondNumber)  result = true;
         }
         return result;
     }
