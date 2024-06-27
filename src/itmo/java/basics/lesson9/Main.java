@@ -59,13 +59,13 @@ public class Main {
         getPointsOfUser(map);
     }
 
-    public static Set<String> makeUnic(List<String> list) {
-        Set<String> set = new HashSet<>(list);
+    public static <T> Set<T>makeUnic(List<T> list) {
+        Set<T> set = new HashSet<>(list);
         return set;
     }
 
-    public static List<Integer> getRandomElements(List<Integer> list, int number) {
-        List<Integer> newList = new ArrayList<>();
+    public static <T> List<T> getRandomElements(List<T> list, int number) {
+        List<T> newList = new ArrayList<>();
         Random rnd = new Random();
         for (int i = 0; i < number; i++) {
             newList.add(list.get(rnd.nextInt(list.size())));
