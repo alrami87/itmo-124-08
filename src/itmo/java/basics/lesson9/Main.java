@@ -59,7 +59,7 @@ public class Main {
         getPointsOfUser(map);
     }
 
-    public static <T> Set<T>makeUnic(List<T> list) {
+    public static <T> Set<T> makeUnic(List<T> list) {
         Set<T> set = new HashSet<>(list);
         return set;
     }
