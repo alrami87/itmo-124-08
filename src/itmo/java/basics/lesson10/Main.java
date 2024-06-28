@@ -1,8 +1,6 @@
 package itmo.java.basics.lesson10;
 
 import java.io.*;
-import java.nio.file.*;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
