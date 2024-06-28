@@ -10,12 +10,6 @@ public class Main {
         File fileOut = new File("files/output.txt");
         File fileOut2 = new File("files/output2.txt");
 
-        try (FileInputStream fis = new FileInputStream(file)) {
-
-        } catch (IOException io) {
-            System.err.println(io.getMessage());
-        }
-
         System.out.println(fileToListOfStrings(file));
 
         writeStringToFile("Это - тестовая строка для записи в 11111 файл, который задан в качестве аргумента.", fileOut);
@@ -73,7 +67,7 @@ public class Main {
         }
     }
 
-    public static void changePatternInFile(File file, String string) {
+    public static void changePatternInFile(File file, String pattern) {
 
         List<String> strings = new ArrayList<>();
 
@@ -92,7 +86,7 @@ public class Main {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
 
             for (String input : strings) {
-                input = input.replaceAll("[\\p{Punct}\\p{Blank}]", string);
+                input = input.replaceAll("[\\p{Punct}\\p{Blank}]", pattern);
                 writer.write(input + "\n");
             }
 
